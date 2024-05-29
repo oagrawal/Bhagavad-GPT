@@ -1,4 +1,4 @@
-ctransformer==0.2.27
+ctransformers==0.2.27
 sentence-transformers==3.0.0
 pinecone-client
 langchain==0.2.1
