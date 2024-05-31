@@ -5,3 +5,6 @@ langchain==0.2.1
 flask
 langchain-community
 langchain_pinecone
+langchain_openai
+pypdf
+sentence-transformers==3.0.0
