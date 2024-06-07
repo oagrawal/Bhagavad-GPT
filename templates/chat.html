@@ -26,7 +26,8 @@
 								</div>
 								<div class="user_info">
 									<span>Bhagavad GPT</span>
-									<p> Simplifying spiritualism for the modern life</p>
+									<p> Simplifying spiritualism for the modern life. Please only ask questions related to the Gita. I will not be very helpful in other contexts.</p>
+                                    <!-- <p>  </p> -->
 								</div>
 							</div>
 						</div>
@@ -68,7 +69,7 @@
 						type: "POST",
 						url: "/get",
 					}).done(function(data) {
-						var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://www.prdistribution.com/spirit/uploads/pressreleases/2019/newsreleases/d83341deb75c4c4f6b113f27b1e42cd8-chatbot-florence-already-helps-thousands-of-patients-to-remember-their-medication.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
+						var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="{{ url_for('static', filename='krishna_pic.png')}}" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
 						$("#messageFormeight").append($.parseHTML(botHtml));
 					});
 					event.preventDefault();
