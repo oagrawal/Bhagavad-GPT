@@ -8,5 +8,5 @@ langchain_pinecone
 langchain_openai
 pypdf
 sentence-transformers==3.0.0
-
+python-dotenv
 -e .
